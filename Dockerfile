@@ -6,7 +6,7 @@ COPY . /app
 # Устанавливаем все зависимости
 RUN apk update && pip install -r /app/requirements.txt --no-cache-dir
 
-ENV FLASK_APP=main.py
+ENV FLASK_APP=/app/main.py
 
 EXPOSE 5000
 
